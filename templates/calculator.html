@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<link rel ="stylesheet" href="
+	https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<title>Hello Gayathiri</title>
+ </head>
+    <body>
+    <div class='container' style='padding-top:50px'>
+    <h1>Car loan calculator</h1>
+ 
+    <form method='post' action='/'>
+ 
+    <div class='form-group row' >
+        <div class='col-sm-6'>
+	    <label>Enter Principle (in Rupees)</label>
+	    </div>
+	
+	    <div class='col-sm-6'>
+	        <input type='number' class='form-control' name='principle' value ="{{principle}}">
+	    </div>
+    </div>
+
+    <div class='form-group row' >
+        <div class='col-sm-6'>
+	    <label>Enter Rate (in %)</label>
+	    </div>	
+	 
+	    <div class='col-sm-6'>
+		    <input type='number' class='form-control' name='Rate' value ="{{Rate}}">
+	    </div>
+    </div>
+	
+    <div class='form-group row' >
+        <div class='col-sm-6'>
+	    <label>Enter time (in year)<label>
+	    </div>
+	 
+        <div class='col-sm-6'>
+		    <input type='number' class='form-control' name='time' value ="{{time}}">
+        </div>
+    </div>
+     	 
+	 
+    <div class='form-group row' >
+        <div style='text-align:center' class='col-sm-12'>
+	        <button type='submit' class='btn btn-primary'>Calculate EMI</button>
+	    </div>	
+    </div>
+	
+    <div>
+    <p style='font-weight:bold; font-size: 30px; color: green'>EMI: {{ EMI }} per month</p>
+    </div>
+	 
+    </form>
+
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.mim.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
